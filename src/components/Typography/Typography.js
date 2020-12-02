@@ -1,6 +1,10 @@
 import React from 'react';
 import './Typography.css';
 
+// props:
+// color
+// level
+
 export default function Typography(props) {
   switch (props.level) {
     case 1:

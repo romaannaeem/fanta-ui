@@ -1,0 +1,30 @@
+thead {
+  background-color: #f2f5f7;
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 0;
+  border: solid #e9edf0 1px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+table tr:hover {
+  background: #f6f7f8;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.table th {
+  border: 0px solid white;
+}
+
+th {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+}

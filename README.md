@@ -1,6 +1,6 @@
 # Fanta UI
 
-Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any class names that Bootstrap uses will also work here!
+Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any class names that Bootstrap uses will also work here! [See Bootstrap Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
 ## Reference
 
@@ -17,16 +17,54 @@ Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any c
 
 ---
 
+### Table
+
+Simply import the table component and use it instead of the top level `table` JSX component. The rest of the table should be defined as a regular [Bootstrap table](https://getbootstrap.com/docs/4.5/content/tables/).
+
+```javascript
+<Table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</Table>
+```
+
+#### Properties
+
+---
+
 ### Finished Components
 
 - Typography
-
-### Unfinished Components
-
-- Typography
-- Code
-- Images
 - Tables
+
+<!-- ### Unfinished Components
+ ! = Probably don't need to touch
 - Figures
 - Alerts
 - Badge
@@ -52,3 +90,5 @@ Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any c
 - Spinners
 - Toasts
 - Tooltips
+- ! Images
+- ! Code -->
