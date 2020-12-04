@@ -1,6 +1,7 @@
 import Typography from './components/Typography/Typography';
 import Table from './components/Table/Table';
 import Alert from './components/Alert/Alert';
+import Badge from './components/Badge/Badge';
 
 function App() {
   return (
@@ -46,6 +47,17 @@ function App() {
       <Alert type="info">This is an info alert</Alert>
       <Alert type="light">This is a light alert</Alert>
       <Alert type="dark">This is a dark alert</Alert>
+      <br />
+      <Badge type="primary" pill>
+        New
+      </Badge>
+      <Badge type="secondary">New</Badge>
+      <Badge type="success">New</Badge>
+      <Badge type="danger">New</Badge>
+      <Badge type="warning">New</Badge>
+      <Badge type="info">New</Badge>
+      <Badge type="light">New</Badge>
+      <Badge type="dark">New</Badge>
     </div>
   );
 }

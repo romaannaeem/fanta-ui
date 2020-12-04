@@ -1,0 +1,34 @@
+.badge-primary {
+  background-color: #3b55ce;
+  color: white;
+}
+
+.badge-secondary {
+  background-color: #7b61f8;
+  color: white;
+}
+
+.badge-success {
+  background-color: #28cf75;
+  color: white;
+}
+
+.badge-danger {
+  background-color: #f21a1d;
+  color: white;
+}
+
+.badge-warning {
+  background-color: #ff5f01;
+  color: white;
+}
+
+.badge-info {
+  background-color: #00c2ba;
+  color: white;
+}
+
+.badge-dark {
+  background-color: #141414;
+  color: white;
+}

@@ -58,11 +58,20 @@ Simply import the table component and use it instead of the top level `table` JS
 
 #### Properties
 
-| Property | Description                                                                                                  | Type     | Default   | Required? |
-| :------- | :----------------------------------------------------------------------------------------------------------- | :------- | :-------- | :-------- |
-| `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` | `String` | `primary` | ❌        |
+| Property | Description                                                                                                  | Type     | Default | Required? |
+| :------- | :----------------------------------------------------------------------------------------------------------- | :------- | :------ | :-------- |
+| `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` | `String` | None    | ✔️        |
 
 ---
+
+### Badge
+
+#### Properties
+
+| Property | Description                                                                                                  | Type     | Default | Required? |
+| :------- | :----------------------------------------------------------------------------------------------------------- | :------- | :------ | :-------- |
+| `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` | `String` | None    | ✔️        |
+| `pill`   | Simply add the `pill` property to turn the badge into a rounded badge                                        | `String` | `false` | ❌        |
 
 ---
 
@@ -70,13 +79,14 @@ Simply import the table component and use it instead of the top level `table` JS
 
 - Typography
 - Tables
+- Alerts
+- Badge
 
 <!-- ### Unfinished Components
 
  ! = Probably don't need to touch
 
-- Alerts
-- Badge
+
 - Breadcrumb
 - Buttons
 - Button group
