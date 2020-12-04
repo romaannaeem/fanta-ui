@@ -64,8 +64,9 @@ Simply import the table component and use it instead of the top level `table` JS
 - Tables
 
 <!-- ### Unfinished Components
+
  ! = Probably don't need to touch
-- Figures
+
 - Alerts
 - Badge
 - Breadcrumb
@@ -90,5 +91,6 @@ Simply import the table component and use it instead of the top level `table` JS
 - Spinners
 - Toasts
 - Tooltips
+- ! Figures
 - ! Images
 - ! Code -->

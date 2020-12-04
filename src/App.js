@@ -1,5 +1,6 @@
 import Typography from './components/Typography/Typography';
 import Table from './components/Table/Table';
+import Alert from './components/Alert/Alert';
 
 function App() {
   return (
@@ -36,6 +37,15 @@ function App() {
           </tr>
         </tbody>
       </Table>
+      <br />
+      <Alert type="primary">This is a primary alert</Alert>
+      <Alert type="secondary">This is a secondary alert</Alert>
+      <Alert type="success">This is a success alert</Alert>
+      <Alert type="danger">This is a danger alert</Alert>
+      <Alert type="warning">This is a warning alert</Alert>
+      <Alert type="info">This is an info alert</Alert>
+      <Alert type="light">This is a light alert</Alert>
+      <Alert type="dark">This is a dark alert</Alert>
     </div>
   );
 }

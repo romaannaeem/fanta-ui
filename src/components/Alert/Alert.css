@@ -1,0 +1,34 @@
+.alert-primary {
+  background-color: #3b55ce;
+  color: white;
+}
+
+.alert-secondary {
+  background-color: #7b61f8;
+  color: white;
+}
+
+.alert-success {
+  background-color: #28cf75;
+  color: white;
+}
+
+.alert-danger {
+  background-color: #f21a1d;
+  color: white;
+}
+
+.alert-warning {
+  background-color: #ff5f01;
+  color: white;
+}
+
+.alert-info {
+  background-color: #00c2ba;
+  color: white;
+}
+
+.alert-dark {
+  background-color: #141414;
+  color: white;
+}
