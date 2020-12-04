@@ -58,5 +58,12 @@ export default function Alert(props) {
           {props.children}
         </div>
       );
+
+    default:
+      return (
+        <div class="alert alert-primary" role="alert">
+          {props.children}
+        </div>
+      );
   }
 }

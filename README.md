@@ -54,7 +54,15 @@ Simply import the table component and use it instead of the top level `table` JS
 </Table>
 ```
 
+### Alert
+
 #### Properties
+
+| Property | Description                                                                                                  | Type     | Default   | Required? |
+| :------- | :----------------------------------------------------------------------------------------------------------- | :------- | :-------- | :-------- |
+| `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` | `String` | `primary` | ❌        |
+
+---
 
 ---
 
