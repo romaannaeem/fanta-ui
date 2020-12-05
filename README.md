@@ -77,25 +77,23 @@ Simply import the table component and use it instead of the top level `table` JS
 
 ### Breadcrumb
 
-All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. An example is shown below.
+All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. Not doing this may lead to unexpected results, as styles are tied to the top level component. An example is shown below.
 
 #### Properties
 
 | Property | Description                                                                                                               | Type      | Default | Required? |
 | :------- | :------------------------------------------------------------------------------------------------------------------------ | :-------- | :------ | :-------- |
-| `active` | This property for the `BreadcrumbItem` component should be used on the active (usually last) item in the breadcrumb chain | `Boolean` | None    | ❌        |
+| `active` | This property for the `BreadcrumbItem` component should be used on the active (usually last) item in the breadcrumb chain | `Boolean` | false   | ❌        |
+| `url`    | The URL that the `BreadcrumbItem` should redirect to                                                                      | `String`  | `#`     | ❌        |
 
 #### Example
 
 ```javascript
 <Breadcrumb>
-  <BreadcrumbItem>
-    <a href="#">Home</a>
-  </BreadcrumbItem>
-  <BreadcrumbItem>
-    <a href="#">Library</a>
-  </BreadcrumbItem>
+  <BreadcrumbItem url="https://google.com">Home</BreadcrumbItem>
+  <BreadcrumbItem>Library</BreadcrumbItem>
   <BreadcrumbItem active>Data</BreadcrumbItem>
+  <Breadcrumb>Data</BreadcrumbItem>
 </Breadcrumb>
 ```
 
@@ -107,12 +105,12 @@ All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. A
 - Tables
 - Alerts
 - Badge
+- Breadcrumb
 
 <!-- ### Unfinished Components
 
- ! = Probably don't need to touch
+ ! = Probably don't need to touch - just turn into a React component and double check for UI/UX improvements
 
-- Breadcrumb
 - Buttons
 - Button group
 - Card

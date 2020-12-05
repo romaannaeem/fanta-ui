@@ -7,7 +7,7 @@ export default function index(props) {
       class={`breadcrumb-item ${props.active ? 'active' : ''}`}
       aria-current="page"
     >
-      {props.children}
+      <a href={`${props.url ? props.url : '#'}`}>{props.children}</a>
     </li>
   );
 }

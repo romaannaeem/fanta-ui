@@ -63,17 +63,16 @@ function App() {
         <Badge type="dark">New</Badge>
       </>
       <br />
+      <br />
       <>
         <Breadcrumb>
-          <BreadcrumbItem>
-            <a href="#">Home</a>
-          </BreadcrumbItem>
-          <BreadcrumbItem>
-            <a href="#">Library</a>
-          </BreadcrumbItem>
+          <BreadcrumbItem url="https://google.com">Home</BreadcrumbItem>
+          <BreadcrumbItem>Library</BreadcrumbItem>
           <BreadcrumbItem active>Data</BreadcrumbItem>
         </Breadcrumb>
       </>
+      <br />
+      <br />
     </div>
   );
 }
