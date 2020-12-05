@@ -1,14 +1,22 @@
-import Typography from './components/Typography';
+import Title from './components/Title';
 import Table from './components/Table';
 import Alert from './components/Alert';
 import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
 import BreadcrumbItem from './components/BreadcrumbItem';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="container">
-      <Typography />
+      <div className="typography">
+        <Title>This is an h1</Title>
+        <Title level={2}>This is an h2</Title>
+        <Title level={3}>This is an h3</Title>
+        <Title level={4}>This is an h4</Title>
+        <Title level={5}>This is an h5</Title>
+        <Title level={6}>This is an h6</Title>
+      </div>
       <br />
       <Table class="table">
         <thead>
@@ -41,7 +49,7 @@ function App() {
         </tbody>
       </Table>
       <br />
-      <>
+      <div className="alerts">
         <Alert type="primary">This is a primary alert</Alert>
         <Alert type="secondary">This is a secondary alert</Alert>
         <Alert type="success">This is a success alert</Alert>
@@ -50,10 +58,12 @@ function App() {
         <Alert type="info">This is an info alert</Alert>
         <Alert type="light">This is a light alert</Alert>
         <Alert type="dark">This is a dark alert</Alert>
-      </>
+      </div>
       <br />
-      <>
-        <Badge type="primary">New</Badge>
+      <div className="badges">
+        <Badge type="primary" pill>
+          New
+        </Badge>
         <Badge type="secondary">New</Badge>
         <Badge type="success">New</Badge>
         <Badge type="danger">New</Badge>
@@ -61,18 +71,29 @@ function App() {
         <Badge type="info">New</Badge>
         <Badge type="light">New</Badge>
         <Badge type="dark">New</Badge>
-      </>
+      </div>
       <br />
       <br />
-      <>
+      <div className="breadcrumbs">
         <Breadcrumb>
           <BreadcrumbItem url="https://google.com">Home</BreadcrumbItem>
           <BreadcrumbItem>Library</BreadcrumbItem>
           <BreadcrumbItem active>Data</BreadcrumbItem>
         </Breadcrumb>
-      </>
+      </div>
       <br />
       <br />
+      <div className="buttons">
+        <Button type="primary">Primary</Button>
+        <Button type="secondary">Secondary</Button>
+        <Button type="success">Success</Button>
+        <Button type="danger">Danger</Button>
+        <Button type="warning">Warning</Button>
+        <Button type="info">Info</Button>
+        <Button type="light">Light</Button>
+        <Button type="dark">Dark</Button>
+        <Button type="link">Link</Button>
+      </div>
     </div>
   );
 }

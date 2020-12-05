@@ -2,7 +2,7 @@
 
 Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any class names that Bootstrap uses will also work here! [See Bootstrap Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/). There is no current standalone version, and to use this, clone this repo.
 
-## Reference
+---
 
 ## Components
 
@@ -99,6 +99,20 @@ All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. N
 
 ---
 
+### Button
+
+| Property | Description                                                                                                          | Type     | Default | Required? |
+| :------- | :------------------------------------------------------------------------------------------------------------------- | :------- | :------ | :-------- |
+| `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link` | `String` | None    | ✔️        |
+
+### Example
+
+```javascript
+<Button type="primary">Primary</Button>
+```
+
+---
+
 ### Finished Components
 
 - Typography
@@ -106,12 +120,12 @@ All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. N
 - Alerts
 - Badge
 - Breadcrumb
+- Buttons
 
 <!-- ### Unfinished Components
 
  ! = Probably don't need to touch - just turn into a React component and double check for UI/UX improvements
 
-- Buttons
 - Button group
 - Card
 - Carousel

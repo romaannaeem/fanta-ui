@@ -1,3 +1,7 @@
+.alert {
+  border-radius: 15px;
+}
+
 .alert-primary {
   background-color: #3b55ce;
   color: white;
