@@ -15,6 +15,14 @@ Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any c
 | `color`  | Hex code to determine font colour                          | `String` | `#212529` | ❌        |
 | `level`  | Corresponds to heading type (h1, h2, etc.). Supports 1 - 6 | `Number` | `1`       | ❌        |
 
+#### Example
+
+```javascript
+<Title>This is an h1</Title>
+<Title level={2}>This is an h2</Title>
+<Title level={3}>This is an h3</Title>
+```
+
 ---
 
 ### Table
@@ -62,6 +70,12 @@ Simply import the table component and use it instead of the top level `table` JS
 | :------- | :----------------------------------------------------------------------------------------------------------- | :------- | :------ | :-------- |
 | `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` | `String` | None    | ✔️        |
 
+#### Example
+
+```javascript
+<Alert type="primary">This is a primary alert</Alert>
+```
+
 ---
 
 ### Badge
@@ -72,6 +86,13 @@ Simply import the table component and use it instead of the top level `table` JS
 | :------- | :----------------------------------------------------------------------------------------------------------- | :------- | :------ | :-------- |
 | `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark` | `String` | None    | ✔️        |
 | `pill`   | Simply add the `pill` property to turn the badge into a rounded badge                                        | `String` | `false` | ❌        |
+
+#### Example
+
+```javascript
+<Badge type="primary" pill>New</Badge>
+<Badge type="secondary">New</Badge>
+```
 
 ---
 
@@ -105,7 +126,7 @@ All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. N
 | :------- | :------------------------------------------------------------------------------------------------------------------- | :------- | :------ | :-------- |
 | `type`   | Alert type. Possible values: `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, `dark`, `link` | `String` | None    | ✔️        |
 
-### Example
+#### Example
 
 ```javascript
 <Button type="primary">Primary</Button>
