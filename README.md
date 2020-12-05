@@ -1,6 +1,6 @@
 # Fanta UI
 
-Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any class names that Bootstrap uses will also work here! [See Bootstrap Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/)
+Restyled Bootstrap UI Kit for React. As this is an extension of Bootstrap, any class names that Bootstrap uses will also work here! [See Bootstrap Docs](https://getbootstrap.com/docs/4.5/getting-started/introduction/). There is no current standalone version, and to use this, clone this repo.
 
 ## Reference
 
@@ -75,6 +75,32 @@ Simply import the table component and use it instead of the top level `table` JS
 
 ---
 
+### Breadcrumb
+
+All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. An example is shown below.
+
+#### Properties
+
+| Property | Description                                                                                                               | Type      | Default | Required? |
+| :------- | :------------------------------------------------------------------------------------------------------------------------ | :-------- | :------ | :-------- |
+| `active` | This property for the `BreadcrumbItem` component should be used on the active (usually last) item in the breadcrumb chain | `Boolean` | None    | ❌        |
+
+#### Example
+
+```javascript
+<Breadcrumb>
+  <BreadcrumbItem>
+    <a href="#">Home</a>
+  </BreadcrumbItem>
+  <BreadcrumbItem>
+    <a href="#">Library</a>
+  </BreadcrumbItem>
+  <BreadcrumbItem active>Data</BreadcrumbItem>
+</Breadcrumb>
+```
+
+---
+
 ### Finished Components
 
 - Typography
@@ -85,7 +111,6 @@ Simply import the table component and use it instead of the top level `table` JS
 <!-- ### Unfinished Components
 
  ! = Probably don't need to touch
-
 
 - Breadcrumb
 - Buttons
