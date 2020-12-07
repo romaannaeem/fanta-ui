@@ -5,6 +5,8 @@ import Badge from './components/Badge';
 import Breadcrumb from './components/Breadcrumb';
 import BreadcrumbItem from './components/BreadcrumbItem';
 import Button from './components/Button';
+import ButtonGroup from './components/ButtonGroup';
+import ButtonToolbar from './components/ButtonToolbar';
 
 function App() {
   return (
@@ -94,6 +96,31 @@ function App() {
         <Button type="dark">Dark</Button>
         <Button type="link">Link</Button>
       </div>
+      <br />
+      <br />
+      <ButtonGroup className="mr-2">
+        <Button type="secondary">Left</Button>
+        <Button type="secondary">Middle</Button>
+        <Button type="secondary">Right</Button>
+      </ButtonGroup>
+      <br />
+      <br />
+      <ButtonToolbar>
+        <ButtonGroup className="mr-2">
+          <Button type="secondary">1</Button>
+          <Button type="secondary">2</Button>
+          <Button type="secondary">3</Button>
+          <Button type="secondary">4</Button>
+        </ButtonGroup>
+        <ButtonGroup className="mr-2">
+          <Button type="secondary">5</Button>
+          <Button type="secondary">6</Button>
+          <Button type="secondary">7</Button>
+        </ButtonGroup>
+        <ButtonGroup className="mr-2">
+          <Button type="secondary">8</Button>
+        </ButtonGroup>
+      </ButtonToolbar>
     </div>
   );
 }

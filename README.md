@@ -134,6 +134,49 @@ All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. N
 
 ---
 
+### ButtonGroup
+
+Import a ButtonGroup and use it [as you would in Bootstrap](https://getbootstrap.com/docs/4.5/components/button-group/). Essentially, You can group a series of buttons together on a single line.
+
+#### Example
+
+```javascript
+<ButtonGroup className="mr-2">
+  <Button type="secondary">Left</Button>
+  <Button type="secondary">Middle</Button>
+  <Button type="secondary">Right</Button>
+</ButtonGroup>
+```
+
+---
+
+### ButtonToolbar
+
+You can combine button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.
+
+#### Example
+
+```javascript
+<ButtonToolbar>
+  <ButtonGroup className="mr-2">
+    <Button type="secondary">1</Button>
+    <Button type="secondary">2</Button>
+    <Button type="secondary">3</Button>
+    <Button type="secondary">4</Button>
+  </ButtonGroup>
+  <ButtonGroup className="mr-2">
+    <Button type="secondary">5</Button>
+    <Button type="secondary">6</Button>
+    <Button type="secondary">7</Button>
+  </ButtonGroup>
+  <ButtonGroup className="mr-2">
+    <Button type="secondary">8</Button>
+  </ButtonGroup>
+</ButtonToolbar>
+```
+
+---
+
 ### Finished Components
 
 - Typography
@@ -142,12 +185,12 @@ All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. N
 - Badge
 - Breadcrumb
 - Buttons
+- Button group
 
 <!-- ### Unfinished Components
 
  ! = Probably don't need to touch - just turn into a React component and double check for UI/UX improvements
 
-- Button group
 - Card
 - Carousel
 - Collapse
