@@ -104,7 +104,7 @@ All `BreadCrumbItem` components must be wrapped with a `Breadcrumb` component. N
 
 | Property | Description                                                                                                               | Type      | Default | Required? |
 | :------- | :------------------------------------------------------------------------------------------------------------------------ | :-------- | :------ | :-------- |
-| `active` | This property for the `BreadcrumbItem` component should be used on the active (usually last) item in the breadcrumb chain | `Boolean` | false   | ❌        |
+| `active` | This property for the `BreadcrumbItem` component should be used on the active (usually last) item in the breadcrumb chain | `Boolean` | `false` | ❌        |
 | `url`    | The URL that the `BreadcrumbItem` should redirect to                                                                      | `String`  | `#`     | ❌        |
 
 #### Example
@@ -191,6 +191,7 @@ You can combine button groups into button toolbars for more complex components. 
 
  ! = Probably don't need to touch - just turn into a React component and double check for UI/UX improvements
 
+- Blockquote
 - Card
 - Carousel
 - Collapse

@@ -7,6 +7,7 @@ import BreadcrumbItem from './components/BreadcrumbItem';
 import Button from './components/Button';
 import ButtonGroup from './components/ButtonGroup';
 import ButtonToolbar from './components/ButtonToolbar';
+import Card from './components/Card';
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
         <Title level={5}>This is an h5</Title>
         <Title level={6}>This is an h6</Title>
       </div>
+
       <br />
+
+      <Title level={5}>Table</Title>
       <Table class="table">
         <thead>
           <tr>
@@ -50,8 +54,11 @@ function App() {
           </tr>
         </tbody>
       </Table>
+
       <br />
+
       <div className="alerts">
+        <Title level={5}>Alerts</Title>
         <Alert type="primary">This is a primary alert</Alert>
         <Alert type="secondary">This is a secondary alert</Alert>
         <Alert type="success">This is a success alert</Alert>
@@ -62,7 +69,9 @@ function App() {
         <Alert type="dark">This is a dark alert</Alert>
       </div>
       <br />
+
       <div className="badges">
+        <Title level={5}>Badges</Title>
         <Badge type="primary" pill>
           New
         </Badge>
@@ -74,18 +83,22 @@ function App() {
         <Badge type="light">New</Badge>
         <Badge type="dark">New</Badge>
       </div>
+
       <br />
-      <br />
+
       <div className="breadcrumbs">
+        <Title level={5}>Breadcrumbs</Title>
         <Breadcrumb>
           <BreadcrumbItem url="https://google.com">Home</BreadcrumbItem>
           <BreadcrumbItem>Library</BreadcrumbItem>
           <BreadcrumbItem active>Data</BreadcrumbItem>
         </Breadcrumb>
       </div>
+
       <br />
-      <br />
+
       <div className="buttons">
+        <Title level={5}>Buttons</Title>
         <Button type="primary">Primary</Button>
         <Button type="secondary">Secondary</Button>
         <Button type="success">Success</Button>
@@ -96,15 +109,18 @@ function App() {
         <Button type="dark">Dark</Button>
         <Button type="link">Link</Button>
       </div>
+
       <br />
-      <br />
+      <Title level={5}>Button Group</Title>
       <ButtonGroup className="mr-2">
         <Button type="secondary">Left</Button>
         <Button type="secondary">Middle</Button>
         <Button type="secondary">Right</Button>
       </ButtonGroup>
+
       <br />
       <br />
+      <Title level={5}>Button Toolbar</Title>
       <ButtonToolbar>
         <ButtonGroup className="mr-2">
           <Button type="secondary">1</Button>
@@ -121,6 +137,15 @@ function App() {
           <Button type="secondary">8</Button>
         </ButtonGroup>
       </ButtonToolbar>
+      <br />
+      <br />
+      <Title level={5}>Card</Title>
+      <Card
+        style={{ width: '18rem' }}
+        title="Card Title"
+        subtitle="subtitle"
+        text="Lorem ipsum sit imet dolor"
+      />
     </div>
   );
 }
