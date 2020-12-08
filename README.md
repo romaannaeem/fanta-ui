@@ -177,6 +177,29 @@ You can combine button groups into button toolbars for more complex components. 
 
 ---
 
+### Blockquote
+
+A component to use for quotes.
+
+| Property | Description                                  | Type      | Default | Required? |
+| :------- | :------------------------------------------- | :-------- | :------ | :-------- |
+| `quote`  | The quote's text.                            | `String`  | None    | ✔️        |
+| `source` | The quote's source.                          | `String`  | None    | ❌        |
+| `center` | Aligns text center. Aligned left by default. | `Boolean` | false   | ❌        |
+| `right`  | Aligns text right. Aligned left by default.  | `Boolean` | false   | ❌        |
+
+#### Example
+
+```javascript
+<Blockquote
+  quote="Don't judge each day by the harvest you reap but by the seeds that you plant."
+  source="Robert Louis Stevenson"
+  center
+/>
+```
+
+---
+
 ### Finished Components
 
 - Typography
@@ -186,12 +209,12 @@ You can combine button groups into button toolbars for more complex components. 
 - Breadcrumb
 - Buttons
 - Button group
+- Blockquote
 
 <!-- ### Unfinished Components
 
  ! = Probably don't need to touch - just turn into a React component and double check for UI/UX improvements
 
-- Blockquote
 - Card
 - Carousel
 - Collapse
