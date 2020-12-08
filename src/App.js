@@ -8,6 +8,7 @@ import Button from './components/Button';
 import ButtonGroup from './components/ButtonGroup';
 import ButtonToolbar from './components/ButtonToolbar';
 import Card from './components/Card';
+import Blockquote from './components/Blockquote';
 
 function App() {
   return (
@@ -111,6 +112,7 @@ function App() {
       </div>
 
       <br />
+
       <Title level={5}>Button Group</Title>
       <ButtonGroup className="mr-2">
         <Button type="secondary">Left</Button>
@@ -120,6 +122,7 @@ function App() {
 
       <br />
       <br />
+
       <Title level={5}>Button Toolbar</Title>
       <ButtonToolbar>
         <ButtonGroup className="mr-2">
@@ -137,14 +140,26 @@ function App() {
           <Button type="secondary">8</Button>
         </ButtonGroup>
       </ButtonToolbar>
+
       <br />
-      <br />
-      <Title level={5}>Card</Title>
+
+      <Title style={{ color: 'red' }} level={5}>
+        Card !INCOMPLETE
+      </Title>
       <Card
         style={{ width: '18rem' }}
         title="Card Title"
         subtitle="subtitle"
         text="Lorem ipsum sit imet dolor"
+      />
+
+      <br />
+
+      <Title level={5}>Quote</Title>
+      <Blockquote
+        quote="I don't have a photograph. I'd give you my footprints, but they're upstairs in my socks."
+        source="Robert Louis Stevenson"
+        right
       />
     </div>
   );

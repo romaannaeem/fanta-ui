@@ -1,0 +1,43 @@
+.blockquote {
+  position: relative;
+  font-family: 'Sanchez', serif;
+  font-size: 2.4em;
+  line-height: 1.5em;
+}
+
+.blockquote .blockquote-footer {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.6em;
+  font-weight: 700;
+  color: #d3d3cf;
+  float: right;
+}
+
+.blockquote .blockquote-footer:before {
+  content: '\2015';
+}
+
+.blockquote:after {
+  content: '\201D';
+  position: absolute;
+  top: 0.28em;
+  right: 0;
+  font-size: 6em;
+  font-style: italic;
+  color: #d3d3cf;
+  z-index: -1;
+}
+
+body {
+  color: hsl(200, 40, 40);
+  font-size: 62.5%;
+}
+
+.blockquote-container {
+  width: 80em;
+  /* margin: 2em auto; */
+}
+
+blockquote {
+  margin-bottom: 3em;
+}
