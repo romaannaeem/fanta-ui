@@ -200,6 +200,33 @@ A component to use for quotes.
 
 ---
 
+### Card
+
+A simple card component. This component is likely to be expanded upon in the future.
+
+| Property   | Description                  | Type     | Default | Required? |
+| :--------- | :--------------------------- | :------- | :------ | :-------- |
+| `imageUrl` | The card's image path or URL | `String` | None    | ❌        |
+| `title`    | The title of the card.       | `String` | None    | ❌        |
+| `subtitle` | The subtitle of the card.    | `String` | None    | ❌        |
+| `text`     | The card's text              | `String` | None    | ❌        |
+| `footer`   | The card footer text         | `String` | None    | ❌        |
+
+#### Example
+
+```javascript
+<Card
+  style={{ width: '18rem' }}
+  imageUrl="https://via.placeholder.com/250"
+  title="Card Title"
+  subtitle="Subtitle"
+  text="Lorem ipsum sit imet dolor"
+  footer="Card Footer"
+/>
+```
+
+---
+
 ### Finished Components
 
 - Typography
@@ -210,12 +237,12 @@ A component to use for quotes.
 - Buttons
 - Button group
 - Blockquote
+- Card (WIP version)
 
 <!-- ### Unfinished Components
 
  ! = Probably don't need to touch - just turn into a React component and double check for UI/UX improvements
 
-- Card
 - Carousel
 - Collapse
 - Dropdowns

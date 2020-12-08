@@ -1,6 +1,8 @@
 import React from 'react';
 import './Blockquote.css';
 
+// ! This component has known bugs with alignment, and overlapping text on the quote icon
+
 export default function index(props) {
   return (
     <div className="blockquote-container" style={props.style}>

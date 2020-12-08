@@ -148,9 +148,11 @@ function App() {
       </Title>
       <Card
         style={{ width: '18rem' }}
+        imageUrl="https://via.placeholder.com/250"
         title="Card Title"
-        subtitle="subtitle"
+        subtitle="Subtitle"
         text="Lorem ipsum sit imet dolor"
+        footer="Card Footer"
       />
 
       <br />
@@ -159,7 +161,6 @@ function App() {
       <Blockquote
         quote="I don't have a photograph. I'd give you my footprints, but they're upstairs in my socks."
         source="Robert Louis Stevenson"
-        right
       />
     </div>
   );
