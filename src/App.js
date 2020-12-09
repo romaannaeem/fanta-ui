@@ -9,6 +9,8 @@ import ButtonGroup from './components/ButtonGroup';
 import ButtonToolbar from './components/ButtonToolbar';
 import Card from './components/Card';
 import Blockquote from './components/Blockquote';
+import Carousel from './components/Carousel';
+import CarouselItem from './components/Carousel/CarouselItem';
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
       <br />
 
       <Title level={5}>Table</Title>
-      <Table class="table">
+      <Table className="table">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -148,7 +150,7 @@ function App() {
       </Title>
       <Card
         style={{ width: '18rem' }}
-        imageUrl="https://via.placeholder.com/250"
+        imageUrl="https://via.placeholder.com/400x250"
         title="Card Title"
         subtitle="Subtitle"
         text="Lorem ipsum sit imet dolor"
@@ -162,6 +164,15 @@ function App() {
         quote="I don't have a photograph. I'd give you my footprints, but they're upstairs in my socks."
         source="Robert Louis Stevenson"
       />
+
+      <br />
+
+      <Title level={5}>Carousel</Title>
+      <Carousel arrowNavigation indicatorNavigation>
+        <CarouselItem imageUrl="https://via.placeholder.com/800x350" />
+        <CarouselItem imageUrl="https://via.placeholder.com/800x350" />
+        <CarouselItem imageUrl="https://via.placeholder.com/800x350" />
+      </Carousel>
     </div>
   );
 }

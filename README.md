@@ -227,6 +227,24 @@ A simple card component. This component is likely to be expanded upon in the fut
 
 ---
 
+### Carousel
+
+A carousel that cycles through images. A `Carousel` component should use `CarouselItem` components as children. Note that one and only one `CarouselItem` should have the `active` property to indicate which slide should show first, or else the carousel will not work properly. Also note that both types of navigation may be used simultaneously, or can be used individually as well.
+
+| Property              | Description                                                    | Type      | Default | Required? |
+| :-------------------- | :------------------------------------------------------------- | :-------- | :------ | :-------- |
+| `arrowNavigation`     | Carousel will use side arrow navigation.                       | `Boolean` | false   | ❌        |
+| `indicatorNavigation` | Carousel will use bottom slide indicator icons for navigation. | `Boolean` | false   | ❌        |
+
+#### CarouselItem
+
+| Property   | Description                  | Type      | Default | Required?                                            |
+| :--------- | :--------------------------- | :-------- | :------ | :--------------------------------------------------- |
+| `imageUrl` | The card's image path or URL | `String`  | None    | ✔️                                                   |
+| `active`   | The title of the card.       | `Boolean` | None    | ✔️ Only one CarouselItem should be marked as active! |
+
+---
+
 ### Finished Components
 
 - Typography
@@ -236,14 +254,14 @@ A simple card component. This component is likely to be expanded upon in the fut
 - Breadcrumb
 - Buttons
 - Button group
-- Blockquote
+- Blockquote (Known bugs)
 - Card (WIP version)
+- Carousel
 
 <!-- ### Unfinished Components
 
  ! = Probably don't need to touch - just turn into a React component and double check for UI/UX improvements
 
-- Carousel
 - Collapse
 - Dropdowns
 - Forms
