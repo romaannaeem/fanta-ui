@@ -1,11 +1,7 @@
 import React from 'react';
-import './Typography.css';
+import './Title.css';
 
-// props:
-// color
-// level
-
-export default function Typography(props) {
+export default function Title(props) {
   switch (props.level) {
     case 1:
       return (

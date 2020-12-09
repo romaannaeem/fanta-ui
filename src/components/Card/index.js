@@ -25,7 +25,7 @@ import './Card.css';
 
 // ! Ensure ListGroups work with this component
 
-export default function index(props) {
+export default function Card(props) {
   return (
     <div className="card" style={props.style}>
       <img src={`${props.imageUrl}`} class="card-img-top" />

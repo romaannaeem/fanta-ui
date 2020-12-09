@@ -1,7 +1,7 @@
 import React from 'react';
 import './BreadcrumbItem.css';
 
-export default function index(props) {
+export default function BreadcrumbItem(props) {
   return (
     <li
       class={`breadcrumb-item ${props.active ? 'active' : ''}`}
