@@ -254,8 +254,8 @@ A carousel that cycles through images. A `Carousel` component should use `Carous
 - Breadcrumb
 - Buttons
 - Button group
-- Blockquote ❗(Known bugs)
-- Card ⚠️(WIP version)
+- Blockquote ❗(Known bugs)❗
+- Card ⚠️(WIP version)⚠️
 - Carousel
 
 <!-- ### Unfinished Components
