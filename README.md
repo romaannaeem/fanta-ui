@@ -238,10 +238,36 @@ A carousel that cycles through images. A `Carousel` component should use `Carous
 
 #### CarouselItem
 
-| Property   | Description                  | Type      | Default | Required?                                            |
-| :--------- | :--------------------------- | :-------- | :------ | :--------------------------------------------------- |
-| `imageUrl` | The card's image path or URL | `String`  | None    | ✔️                                                   |
-| `active`   | The title of the card.       | `Boolean` | None    | ✔️ Only one CarouselItem should be marked as active! |
+| Property   | Description                  | Type      | Default | Required?                                              |
+| :--------- | :--------------------------- | :-------- | :------ | :----------------------------------------------------- |
+| `imageUrl` | The card's image path or URL | `String`  | None    | ✔️                                                     |
+| `active`   | The title of the card.       | `Boolean` | None    | ✔️ Only one `CarouselItem` should be marked as active! |
+
+#### Example
+
+```javascript
+<Carousel arrowNavigation indicatorNavigation>
+  <CarouselItem imageUrl="https://via.placeholder.com/800x350" />
+  <CarouselItem imageUrl="https://via.placeholder.com/800x350" />
+  <CarouselItem imageUrl="https://via.placeholder.com/800x350" />
+</Carousel>
+```
+
+---
+
+### Jumbotron
+
+The classic [Bootstrap Jumbotron](https://getbootstrap.com/docs/4.5/components/jumbotron/) returns! This component is good for hero style content.
+
+| Property | Description                                                  | Type      | Default | Required? |
+| :------- | :----------------------------------------------------------- | :-------- | :------ | :-------- |
+| `fluid`  | Makes the Jumbotron full-width and without any border radius | `Boolean` | false   | ❌        |
+
+#### Example
+
+```javascript
+<Jumbotron fluid>...</Jumbotron>
+```
 
 ---
 
@@ -257,6 +283,7 @@ A carousel that cycles through images. A `Carousel` component should use `Carous
 - Blockquote ❗(Known bugs)❗
 - Card ⚠️(WIP version)⚠️
 - Carousel
+- Jumbotron
 
 <!-- ### Unfinished Components
 
@@ -264,9 +291,7 @@ A carousel that cycles through images. A `Carousel` component should use `Carous
 
 - Collapse
 - Dropdowns
-- Forms
 - Input group
-- Jumbotron
 - List group
 - Media object
 - Modal
@@ -279,6 +304,7 @@ A carousel that cycles through images. A `Carousel` component should use `Carous
 - Spinners
 - Toasts
 - Tooltips
+- Forms
 - ! Figures
 - ! Images
 - ! Code -->
